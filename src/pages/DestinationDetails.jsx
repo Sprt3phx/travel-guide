@@ -9,7 +9,7 @@ export default function DestinationDetails() {
 
 
     useEffect(() => {
-        fetch(`https://restcountries.com/v3.1/alpha/${id}?fields=cca3,name,region,flags,population,capital,languages,currencies`)
+        fetch(`https://restcountries.com/v3.1/alpha/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setCountry(data[0]);
